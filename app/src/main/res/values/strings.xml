@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Jot-App</string>
+    <string name="button_text">button_text</string>
 </resources>

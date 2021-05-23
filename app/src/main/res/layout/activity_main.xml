@@ -20,17 +20,16 @@
         android:textSize="50sp"
         android:textStyle="bold" />
 
-
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
         android:id="@+id/loginButton"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorTextIcons"
+        android:background="@drawable/roundshapedbutton"
+        android:text="Login"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTextIcons"/>
+
 
 </RelativeLayout >
 

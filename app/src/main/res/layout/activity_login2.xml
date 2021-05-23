@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+<!--    android:background="@color/colorPrimary"-->
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/centerline"
+    android:layout_centerInParent="true"
+    >
+
+</RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_marginRight="30dp"
+    android:layout_marginLeft= "30dp"
+    android:layout_above="@+id/centerline"
+    android:layout_marginBottom="150dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Glad to have you back!"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login to continue!"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+</LinearLayout>
+
+</RelativeLayout>

@@ -23,9 +23,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton"
+        android:id="@+id/startButton"
         android:background="@drawable/roundshapedbutton"
-        android:text="Login"
+        android:text="Get Started"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorTextIcons"/>

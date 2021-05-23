@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Jot-App</string>
     <string name="button_text">button_text</string>
+    <string name="glad_to_have_you_back">Glad to have you back!</string>
+    <string name="login_to_continue">Login to continue!</string>
+    <string name="enter_email_adress_or_username">Enter Email Adress or Username</string>
 </resources>

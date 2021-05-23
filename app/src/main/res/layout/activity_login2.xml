@@ -7,15 +7,12 @@
     tools:context=".LoginActivity">
 <!--    android:background="@color/colorPrimary"-->
 
-
-
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/centerline"
     android:layout_centerInParent="true"
     >
-
 </RelativeLayout>
 
 
@@ -30,24 +27,127 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Glad to have you back!"
-        android:textSize="33sp"
+        android:text="@string/glad_to_have_you_back"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/black">
-
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
     </TextView>
-
-
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login to continue!"
+        android:text="@string/login_to_continue"
         android:textSize="23sp"
         android:textStyle="bold"
-        android:textColor="@color/black">
-
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
     </TextView>
 </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/centerline"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loginemail"
+    android:hint="@string/enter_email_adress_or_username"
+    android:inputType="textEmailAddress"
+    android:autofillHints="Email/Username">
+
+</EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centerline"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpassword"
+            android:hint="Enter your Password  "
+            android:inputType="textPassword"
+            >
+
+        </EditText>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/login"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:background="@drawable/roundshapedbutton"
+            android:text="Log in"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTextIcons"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgotten Password?"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+     android:layout_alignParentBottom="true"
+        android:id="@+id/signup"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupButton"
+            android:background="@drawable/roundshapedbutton"
+            android:text="New User? Sign up!"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTextIcons"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

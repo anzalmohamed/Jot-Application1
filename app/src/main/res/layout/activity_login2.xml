@@ -120,6 +120,7 @@
             android:layout_below="@+id/login"
            android:layout_marginRight="20dp"
            android:layout_marginLeft="20dp"
+        android:id="@+id/forgotpassword"
         android:layout_marginTop="10dp"
         android:text="Forgotten Password?"
         android:textColor="@color/black"

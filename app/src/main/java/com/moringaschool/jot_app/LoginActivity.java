@@ -80,11 +80,11 @@ public class LoginActivity extends AppCompatActivity {
 
                     firebaseAuth.signInWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
-                        public void onComplete(@NonNull  Task<AuthResult> task) {
+                        public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful())
                             {
-                                checkmailverification();
+                                checkMailVerification();
                             }
                            else{  Toast.makeText(LoginActivity.this, "Account does not exist", Toast.LENGTH_SHORT).show();}
 
@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void checkmailverification() {
+    private void checkMailVerification() {
 
         FirebaseUser firebaseuser= firebaseAuth.getCurrentUser();
         if(firebaseuser.isEmailVerified()==true)
@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity {
        finish();
        startActivity(new Intent(LoginActivity.this,CreatenotesActivity.class));
         }
-else{
+       else{
             Toast.makeText(LoginActivity.this, "Verify your Email", Toast.LENGTH_SHORT).show();
        firebaseAuth.signOut();
         }

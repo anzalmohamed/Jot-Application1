@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JotApp">
-        <activity android:name=".CreatenotesActivity"></activity>
+        <activity android:name=".NotesActivity"></activity>
+        <activity android:name=".CreatenotesActivity" />
         <activity android:name=".ForgottenpasswordActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />

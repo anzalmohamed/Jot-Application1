@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class CreatenotesActivity extends AppCompatActivity {
 
-    FloatingActionButton mcreaatenotesfab;
+    FloatingActionButton mcreaatenotesFab;
     private FirebaseAuth  fireaseAuth;
 
     @Override
@@ -22,13 +22,13 @@ public class CreatenotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createnotes);
 
-        mcreaatenotesfab=findViewById(R.id.createnotesfab);
+        mcreaatenotesFab=findViewById(R.id.createnotesFab);
 
         fireaseAuth=fireaseAuth.getInstance();
 
         getSupportActionBar().setTitle("All Notes");
 
-        mcreaatenotesfab.setOnClickListener(new View.OnClickListener() {
+        mcreaatenotesFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CreatenotesActivity.this,NotesActivity.class));

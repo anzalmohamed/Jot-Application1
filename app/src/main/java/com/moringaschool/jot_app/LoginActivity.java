@@ -75,40 +75,40 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     Toast.makeText(LoginActivity.this, "Fill in the stated fields", Toast.LENGTH_SHORT).show();
                 }
-                else{
+                else{   startActivity(new Intent(LoginActivity.this,CreatenotesActivity.class));}}
                     //login user
 
-                    firebaseAuth.signInWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-
-                            if(task.isSuccessful())
-                            {
-                                checkMailVerification();
-                            }
-                           else{  Toast.makeText(LoginActivity.this, "Account does not exist", Toast.LENGTH_SHORT).show();}
-
-                        }
-                    });
-
-                }
-            }
-        });
-
-    }
-
-    private void checkMailVerification() {
-
-        FirebaseUser firebaseuser= firebaseAuth.getCurrentUser();
-        if(firebaseuser.isEmailVerified()==true)
-        {
-            Toast.makeText(LoginActivity.this, "Logged in", Toast.LENGTH_SHORT).show();
-       finish();
-       startActivity(new Intent(LoginActivity.this,CreatenotesActivity.class));
-        }
-       else{
-            Toast.makeText(LoginActivity.this, "Verify your Email", Toast.LENGTH_SHORT).show();
-       firebaseAuth.signOut();
-        }
-    }
-}
+//                    firebaseAuth.signInWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<AuthResult> task) {
+//
+//                            if(task.isSuccessful())
+//                            {
+//                                checkMailVerification();
+//                            }
+//                           else{  Toast.makeText(LoginActivity.this, "Account does not exist", Toast.LENGTH_SHORT).show();}
+//
+//                        }
+//                    });
+//
+//                }
+//            }
+//        });
+//
+//    }
+//
+//    private void checkMailVerification() {
+//
+//        FirebaseUser firebaseuser= firebaseAuth.getCurrentUser();
+//        if(firebaseuser.isEmailVerified()==true)
+//        {
+//            Toast.makeText(LoginActivity.this, "Logged in", Toast.LENGTH_SHORT).show();
+//       finish();
+//       startActivity(new Intent(LoginActivity.this,CreatenotesActivity.class));
+//        }
+//       else{
+//            Toast.makeText(LoginActivity.this, "Verify your Email", Toast.LENGTH_SHORT).show();
+//       firebaseAuth.signOut();
+//        }
+//    }
+});}}

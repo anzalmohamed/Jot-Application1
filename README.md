@@ -1,10 +1,11 @@
 JOT APP
 =================
-Jot is an application Designed to let its user write down notes, reminders and generally ideas or anything they would require a pen and paper for
+Jot is an application Designed to let its user write down notes, reminders and generally
+ ideas or anything they would require a pen and paper for.
 
 
+#The Features of This  Android Note Taking Application is : 
 
-##The Features of This  Android Note Taking Application is : 
 1. Firebase Email Authentication 
 2. Firebase Anonymous Authentication 
 3. Create, Update, Delete Notes
@@ -28,7 +29,9 @@ For your convenience, the google-services.json file has been deleted from the or
  
 ## Authors
 
+*Anzal Mohamed
+
 ## License
+MIT License
 
 
-## Acknowledgments
